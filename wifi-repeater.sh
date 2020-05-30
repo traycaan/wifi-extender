@@ -23,10 +23,10 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-    ssid="fdgmay"
+    ssid="test"
     mode=2
     key_mgmt=WPA-PSK
-    psk="trainslovepisaswell220"
+    psk="test"
     frequency=2412
 }
 EOF
@@ -41,8 +41,8 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-    ssid=""
-    psk="12345678"
+    ssid="test"
+    psk="test"
 }
 EOF
 
