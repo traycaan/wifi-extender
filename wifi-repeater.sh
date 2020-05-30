@@ -18,15 +18,15 @@ else
     ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
 
    cat > /etc/wpa_supplicant/wpa_supplicant-wlan0.conf <<EOF
-country=IN
+country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-    ssid="RPi-AP"
+    ssid="fdgmay"
     mode=2
     key_mgmt=WPA-PSK
-    psk="raspberry"
+    psk="trainslovepisaswell220"
     frequency=2412
 }
 EOF
@@ -36,12 +36,12 @@ EOF
     systemctl enable wpa_supplicant@wlan0.service
 
     cat > /etc/wpa_supplicant/wpa_supplicant-wlan1.conf <<EOF
-country=IN
+country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
 network={
-    ssid="Asus RT-AC5300"
+    ssid=""
     psk="12345678"
 }
 EOF
